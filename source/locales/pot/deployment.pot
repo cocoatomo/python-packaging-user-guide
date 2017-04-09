@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013–2015, PyPA
+# This file is distributed under the same license as the Python Packaging User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Packaging User Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../deployment.rst:4
+msgid "Application Deployment"
+msgstr ""
+
+#: ../../deployment.rst:0
+msgid "Page Status"
+msgstr ""
+
+#: ../../deployment.rst:6
+msgid "Incomplete"
+msgstr ""
+
+#: ../../deployment.rst:0
+msgid "Last Reviewed"
+msgstr ""
+
+#: ../../deployment.rst:7
+msgid "2014-11-11"
+msgstr ""
+
+#: ../../deployment.rst:14
+msgid "Overview"
+msgstr ""
+
+#: ../../deployment.rst:18
+msgid "Supporting multiple hardware platforms"
+msgstr ""
+
+#: ../../deployment.rst:40
+msgid "OS Packaging & Installers"
+msgstr ""
+
+#: ../../deployment.rst:52
+msgid "Windows"
+msgstr ""
+
+#: ../../deployment.rst:61
+msgid "Pynsist"
+msgstr ""
+
+#: ../../deployment.rst:63
+msgid "`Pynsist <https://pypi.python.org/pypi/pynsist>`__ is a tool that bundles Python programs together with the Python-interpreter into a single installer based on NSIS. In most cases, packaging only requires the user to choose a version of the Python-interpreter and declare the dependencies of the program. The tool downloads the specified Python-interpreter for Windows and packages it with all the dependencies in a single Windows-executable installer."
+msgstr ""
+
+#: ../../deployment.rst:70
+msgid "The installer installs or updates the Python-interpreter on the users system, which can be used independently of the packaged program. The program itself, can be started from a shortcut, that the installer places in the start-menu. Uninstalling the program leaves the Python installation of the user intact."
+msgstr ""
+
+#: ../../deployment.rst:75
+msgid "A big advantage of pynsist is that the Windows packages can be built on Linux. There are several examples for different kinds of programs (console, GUI) in the `documentation <http://pynsist.readthedocs.org>`__. The tool is released under the MIT-licence."
+msgstr ""
+
+#: ../../deployment.rst:81
+msgid "Application Bundles"
+msgstr ""
+
+#: ../../deployment.rst:92
+msgid "Configuration Management"
+msgstr ""
+

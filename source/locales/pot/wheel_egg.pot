@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013–2015, PyPA
+# This file is distributed under the same license as the Python Packaging User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Packaging User Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../wheel_egg.rst:5
+msgid "Wheel vs Egg"
+msgstr ""
+
+#: ../../wheel_egg.rst:0
+msgid "Page Status"
+msgstr ""
+
+#: ../../wheel_egg.rst:7
+msgid "Complete"
+msgstr ""
+
+#: ../../wheel_egg.rst:0
+msgid "Last Reviewed"
+msgstr ""
+
+#: ../../wheel_egg.rst:8
+msgid "2015-09-10"
+msgstr ""
+
+#: ../../wheel_egg.rst:10
+msgid ":term:`Wheel` and :term:`Egg` are both packaging formats that aim to support the use case of needing an install artifact that doesn't require building or compilation, which can be costly in testing and production workflows."
+msgstr ""
+
+#: ../../wheel_egg.rst:14
+msgid "The :term:`Egg` format was introduced by :ref:`setuptools` in 2004, whereas the :term:`Wheel` format was introduced by :pep:`427` in 2012."
+msgstr ""
+
+#: ../../wheel_egg.rst:17
+msgid ":term:`Wheel` is currently considered the standard for :term:`built <Built Distribution>` and :term:`binary <Binary Distribution>` packaging for Python."
+msgstr ""
+
+#: ../../wheel_egg.rst:20
+msgid "Here's a breakdown of the important differences between :term:`Wheel` and :term:`Egg`."
+msgstr ""
+
+#: ../../wheel_egg.rst:23
+msgid ":term:`Wheel` has an :pep:`official PEP <427>`. :term:`Egg` did not."
+msgstr ""
+
+#: ../../wheel_egg.rst:25
+msgid ":term:`Wheel` is a :term:`distribution <Distribution Package>` format, i.e a packaging format. [1]_ :term:`Egg` was both a distribution format and a runtime installation format (if left zipped), and was designed to be importable."
+msgstr ""
+
+#: ../../wheel_egg.rst:29
+msgid ":term:`Wheel` archives do not include .pyc files. Therefore, when the distribution only contains python files (i.e. no compiled extensions), and is compatible with Python 2 and 3, it's possible for a wheel to be \"universal\", similar to an :term:`sdist <Source Distribution (or \"sdist\")>`."
+msgstr ""
+
+#: ../../wheel_egg.rst:34
+msgid ":term:`Wheel` uses :pep:`PEP376-compliant <376>` ``.dist-info`` directories. Egg used ``.egg-info``."
+msgstr ""
+
+#: ../../wheel_egg.rst:37
+msgid ":term:`Wheel` has a :pep:`richer file naming convention <425>`. A single wheel archive can indicate its compatibility with a number of Python language versions and implementations, ABIs, and system architectures."
+msgstr ""
+
+#: ../../wheel_egg.rst:41
+msgid ":term:`Wheel` is versioned. Every wheel file contains the version of the wheel specification and the implementation that packaged it."
+msgstr ""
+
+#: ../../wheel_egg.rst:44
+msgid ":term:`Wheel` is internally organized by `sysconfig path type <http://docs.python.org/2/library/sysconfig.html#installation-paths>`_, therefore making it easier to convert to other formats."
+msgstr ""
+
+#: ../../wheel_egg.rst:50
+msgid "Circumstantially, in some cases, wheels can be used as an importable runtime format, although :pep:`this is not officially supported at this time <427#is-it-possible-to-import-python-code-directly-from-a-wheel-file>`."
+msgstr ""
+

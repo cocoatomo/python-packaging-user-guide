@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013–2015, PyPA
+# This file is distributed under the same license as the Python Packaging User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Packaging User Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../specifications.rst:6
+msgid "PyPA Specifications"
+msgstr ""
+
+#: ../../specifications.rst:0
+msgid "Page Status"
+msgstr ""
+
+#: ../../specifications.rst:8
+msgid "Complete"
+msgstr ""
+
+#: ../../specifications.rst:0
+msgid "Last Reviewed"
+msgstr ""
+
+#: ../../specifications.rst:9
+msgid "2016-01-22"
+msgstr ""
+
+#: ../../specifications.rst:11
+msgid "This is a list of currently active interoperability specifications maintained by the Python Packaging Authority."
+msgstr ""
+
+#: ../../specifications.rst:15
+msgid "Package distribution metadata"
+msgstr ""
+
+#: ../../specifications.rst:18
+msgid "Core metadata"
+msgstr ""
+
+#: ../../specifications.rst:20
+msgid "The current core metadata file format, version 1.2, is specified in :pep:`345`."
+msgstr ""
+
+#: ../../specifications.rst:22
+msgid "However, the version specifiers and environment markers sections of that PEP have been superceded as described below. In addition, metadata files are permitted to contain the following additional field:"
+msgstr ""
+
+#: ../../specifications.rst:27
+msgid "Provides-Extra (multiple use)"
+msgstr ""
+
+#: ../../specifications.rst:29
+msgid "A string containing the name of an optional feature. Must be a valid Python identifier. May be used to make a dependency conditional on whether the optional feature has been requested."
+msgstr ""
+
+#: ../../specifications.rst:33
+#: ../../specifications.rst:43
+msgid "Example::"
+msgstr ""
+
+#: ../../specifications.rst:38
+msgid "A second distribution requires an optional dependency by placing it inside square brackets, and can request multiple features by separating them with a comma (,). The requirements are evaluated for each requested feature and added to the set of requirements for the distribution."
+msgstr ""
+
+#: ../../specifications.rst:48
+msgid "Two feature names `test` and `doc` are reserved to mark dependencies that are needed for running automated tests and generating documentation, respectively."
+msgstr ""
+
+#: ../../specifications.rst:52
+msgid "It is legal to specify ``Provides-Extra:`` without referencing it in any ``Requires-Dist:``."
+msgstr ""
+
+#: ../../specifications.rst:57
+msgid "Version Specifiers"
+msgstr ""
+
+#: ../../specifications.rst:59
+msgid "Version numbering requirements and the semantics for specifying comparisons between versions are defined in :pep:`440`."
+msgstr ""
+
+#: ../../specifications.rst:62
+msgid "The version specifiers section in this PEP supersedes the version specifiers section in :pep:`345`."
+msgstr ""
+
+#: ../../specifications.rst:66
+msgid "Dependency Specifiers"
+msgstr ""
+
+#: ../../specifications.rst:68
+msgid "The dependency specifier format used to declare a dependency on another component is defined in :pep:`508`."
+msgstr ""
+
+#: ../../specifications.rst:71
+msgid "The environment markers section in this PEP supersedes the environment markers section in :pep:`345`."
+msgstr ""
+
+#: ../../specifications.rst:75
+msgid "Source Distribution Format"
+msgstr ""
+
+#: ../../specifications.rst:77
+msgid "The source distribution format (``sdist``) is not currently formally defined. Instead, its format is implicitly defined by the behaviour of the standard library's ``distutils`` module when executing the ``setup.py sdist`` command."
+msgstr ""
+
+#: ../../specifications.rst:83
+msgid "Binary Distribution Format"
+msgstr ""
+
+#: ../../specifications.rst:85
+msgid "The binary distribution format (``wheel``) is defined in :pep:`427`."
+msgstr ""
+
+#: ../../specifications.rst:88
+msgid "Platform Compatibility Tags"
+msgstr ""
+
+#: ../../specifications.rst:90
+msgid "The platform compatibility tagging model used for ``wheel`` distribution is defined in :pep:`425`."
+msgstr ""
+
+#: ../../specifications.rst:93
+msgid "The scheme defined in that PEP is insufficient for public distribution of Linux wheel files (and \\*nix wheel files in general), so :pep:`513` was created to define the ``manylinux1`` tag."
+msgstr ""
+
+#: ../../specifications.rst:98
+msgid "Recording Installed Distributions"
+msgstr ""
+
+#: ../../specifications.rst:100
+msgid "The format used to record installed packages and their contents is defined in :pep:`376`."
+msgstr ""
+
+#: ../../specifications.rst:103
+msgid "Note that only the ``dist-info`` directory and the ``RECORD`` file format from that PEP are currently implemented in the default packaging toolchain."
+msgstr ""
+
+#: ../../specifications.rst:108
+msgid "Package index interfaces"
+msgstr ""
+
+#: ../../specifications.rst:111
+msgid "Simple repository API"
+msgstr ""
+
+#: ../../specifications.rst:113
+msgid "The current interface for querying available package versions and retrieving packages from an index server is defined in :pep:`503`."
+msgstr ""
+
