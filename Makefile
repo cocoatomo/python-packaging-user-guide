@@ -12,7 +12,7 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest
+.PHONY: help clean html dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest gettext htmlja
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -26,6 +26,8 @@ help:
 	@echo "  changes   to make an overview of all changed/added/deprecated items"
 	@echo "  linkcheck to check all external links for integrity"
 	@echo "  doctest   to run all doctests embedded in the documentation (if enabled)"
+	@echo "  gettext   to generate gettext .pot files"
+	@echo "  html      to make japanese standalone HTML files"
 
 clean:
 	-rm -rf $(BUILDDIR)/*
@@ -87,3 +89,11 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+
+gettext:
+	$(SPHINXBUILD) -b gettext -D gettext_compact=0 -w warnings.txt -d $(BUILDDIR)/.doctrees source source/locales/pot
+	@echo
+	@echo "gettext .pot files generated in $(BUILDDIR)/gettext."
+
+htmlja:
+	$(SPHINXBUILD) -b html -j4 -D language=ja -D gettext_compact=0 -E -d build/doctrees source $(BUILDDIR)/htmlja
