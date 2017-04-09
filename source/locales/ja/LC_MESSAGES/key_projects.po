@@ -1,0 +1,469 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Packaging User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: ../../key_projects.rst:6
+msgid "Project Summaries"
+msgstr ""
+
+#: ../../key_projects.rst:0
+msgid "Page Status"
+msgstr ""
+
+#: ../../key_projects.rst:8
+msgid "Complete"
+msgstr ""
+
+#: ../../key_projects.rst:0
+msgid "Last Reviewed"
+msgstr ""
+
+#: ../../key_projects.rst:9
+msgid "2016-06-24"
+msgstr ""
+
+#: ../../key_projects.rst:11
+msgid ""
+"Summaries and links for the most relevant projects in the space of Python "
+"installation and packaging."
+msgstr ""
+
+#: ../../key_projects.rst:17
+msgid "PyPA Projects"
+msgstr ""
+
+#: ../../key_projects.rst:22
+msgid "bandersnatch"
+msgstr ""
+
+#: ../../key_projects.rst:24
+msgid ""
+"`Mailing list <http://mail.python.org/mailman/listinfo/distutils-sig>`__ "
+"[2]_ | `Issues <https://bitbucket.org/pypa/bandersnatch/issues?status="
+"new&status=open>`__ | `Bitbucket <https://bitbucket.org/pypa/"
+"bandersnatch>`__ | `PyPI <https://pypi.python.org/pypi/bandersnatch>`__"
+msgstr ""
+
+#: ../../key_projects.rst:29
+msgid ""
+"bandersnatch is a PyPI mirroring client designed to efficiently create a "
+"complete mirror of the contents of PyPI."
+msgstr ""
+
+#: ../../key_projects.rst:36
+msgid "distlib"
+msgstr ""
+
+#: ../../key_projects.rst:38
+msgid ""
+"`Docs <http://pythonhosted.org/distlib/>`__ | `Mailing list <http://mail."
+"python.org/mailman/listinfo/distutils-sig>`__ [2]_ | `Issues <https://"
+"bitbucket.org/pypa/distlib/issues?status=new&status=open>`__ | `Bitbucket "
+"<https://bitbucket.org/pypa/distlib>`__ | `PyPI <https://pypi.python.org/"
+"pypi/distlib>`__"
+msgstr ""
+
+#: ../../key_projects.rst:44
+msgid ""
+"Distlib is a library which implements low-level functions that relate to "
+"packaging and distribution of Python software.  It consists in part of the "
+"functions from the `distutils2 <https://pypi.python.org/pypi/Distutils2>`_ "
+"project, which was intended to be released as ``packaging`` in the Python 3."
+"3 stdlib, but was removed shortly before Python 3.3 entered beta testing."
+msgstr ""
+
+#: ../../key_projects.rst:54
+msgid "packaging"
+msgstr ""
+
+#: ../../key_projects.rst:56
+msgid ""
+"`Dev list <http://groups.google.com/group/pypa-dev>`__ | `Issues <https://"
+"github.com/pypa/packaging/issues>`__ | `Github <https://github.com/pypa/"
+"packaging>`__ | `PyPI <https://pypi.python.org/pypi/packaging>`__ | User irc:"
+"#pypa | Dev irc:#pypa-dev"
+msgstr ""
+
+#: ../../key_projects.rst:63
+msgid ""
+"Core utilities for Python packaging used by :ref:`pip` and :ref:`setuptools`."
+""
+msgstr ""
+
+#: ../../key_projects.rst:69
+msgid "pip"
+msgstr ""
+
+#: ../../key_projects.rst:71
+msgid ""
+"`Docs <https://pip.pypa.io/en/stable/>`__ | `User list <http://groups.google."
+"com/group/python-virtualenv>`__ [1]_ | `Dev list <http://groups.google.com/"
+"group/pypa-dev>`__ | `Issues <https://github.com/pypa/pip/issues>`__ | "
+"`Github <https://github.com/pypa/pip>`__ | `PyPI <https://pypi.python.org/"
+"pypi/pip/>`__ | User irc:#pypa | Dev irc:#pypa-dev"
+msgstr ""
+
+#: ../../key_projects.rst:80
+msgid "A tool for installing Python packages."
+msgstr ""
+
+#: ../../key_projects.rst:84
+msgid "Python Packaging User Guide"
+msgstr ""
+
+#: ../../key_projects.rst:86
+msgid ""
+"`Docs <https://packaging.python.org/en/latest/>`__ | `Mailing list <http://"
+"mail.python.org/mailman/listinfo/distutils-sig>`__ | `Issues <https://github."
+"com/pypa/python-packaging-user-guide/issues>`__ | `Github <https://github."
+"com/pypa/python-packaging-user-guide>`__ | User irc:#pypa | Dev irc:#pypa-"
+"dev"
+msgstr ""
+
+#: ../../key_projects.rst:93
+msgid "This guide!"
+msgstr ""
+
+#: ../../key_projects.rst:100
+msgid "setuptools"
+msgstr ""
+
+#: ../../key_projects.rst:102
+msgid ""
+"`Docs <https://setuptools.readthedocs.io/en/latest/>`__ | `User list <http://"
+"mail.python.org/mailman/listinfo/distutils-sig>`__ [2]_ | `Dev list <http://"
+"groups.google.com/group/pypa-dev>`__ | `Issues <https://github.com/pypa/"
+"setuptools/issues>`__ | `GitHub <https://github.com/pypa/setuptools>`__ | "
+"`PyPI <https://pypi.python.org/pypi/setuptools>`__ | User irc:#pypa  | Dev "
+"irc:#pypa-dev"
+msgstr ""
+
+#: ../../key_projects.rst:112
+msgid ""
+"setuptools (which includes ``easy_install``) is a collection of enhancements "
+"to the Python distutils that allow you to more easily build and distribute "
+"Python distributions, especially ones that have dependencies on other "
+"packages."
+msgstr ""
+
+#: ../../key_projects.rst:116
+msgid ""
+"`distribute`_ was a fork of setuptools that was merged back into setuptools "
+"(in v0.7), thereby making setuptools the primary choice for Python packaging."
+""
+msgstr ""
+
+#: ../../key_projects.rst:123
+msgid "twine"
+msgstr ""
+
+#: ../../key_projects.rst:125
+msgid ""
+"`Mailing list <http://mail.python.org/mailman/listinfo/distutils-sig>`__ "
+"[2]_ | `Issues <https://github.com/pypa/twine/issues>`__ | `Github <https://"
+"github.com/pypa/twine>`__ | `PyPI <https://pypi.python.org/pypi/twine>`__"
+msgstr ""
+
+#: ../../key_projects.rst:130
+msgid ""
+"Twine is a utility for interacting with PyPI, that offers a secure "
+"replacement for ``setup.py upload``."
+msgstr ""
+
+#: ../../key_projects.rst:138
+msgid "virtualenv"
+msgstr ""
+
+#: ../../key_projects.rst:140
+msgid ""
+"`Docs <https://virtualenv.pypa.io/en/stable/>`__ | `User list <http://groups."
+"google.com/group/python-virtualenv>`__ | `Dev list <http://groups.google.com/"
+"group/pypa-dev>`__ | `Issues <https://github.com/pypa/virtualenv/issues>`__ "
+"| `Github <https://github.com/pypa/virtualenv>`__ | `PyPI <https://pypi."
+"python.org/pypi/virtualenv/>`__ | User irc:#pypa  | Dev irc:#pypa-dev"
+msgstr ""
+
+#: ../../key_projects.rst:149
+msgid "A tool for creating isolated Python environments."
+msgstr ""
+
+#: ../../key_projects.rst:155
+msgid "Warehouse"
+msgstr ""
+
+#: ../../key_projects.rst:157
+msgid ""
+"`Docs <https://warehouse.pypa.io/>`__ | `Mailing list <http://mail.python."
+"org/mailman/listinfo/distutils-sig>`__ [2]_ | `Issues <https://github.com/"
+"pypa/warehouse/issues>`__ | `Github <https://github.com/pypa/warehouse>`__ | "
+"Dev irc:#pypa-dev"
+msgstr ""
+
+#: ../../key_projects.rst:164
+msgid ""
+"The new unreleased PyPI application which can be previewed at https://pypi."
+"org/."
+msgstr ""
+
+#: ../../key_projects.rst:170
+msgid "wheel"
+msgstr ""
+
+#: ../../key_projects.rst:172
+msgid ""
+"`Docs <http://wheel.readthedocs.io/en/latest/>`__ | `Mailing list <http://"
+"mail.python.org/mailman/listinfo/distutils-sig>`__ [2]_ | `Issues <https://"
+"bitbucket.org/pypa/wheel/issues?status=new&status=open>`__ | `Bitbucket "
+"<https://bitbucket.org/pypa/wheel>`__ | `PyPI <https://pypi.python.org/pypi/"
+"wheel>`__ | User irc:#pypa  | Dev irc:#pypa-dev"
+msgstr ""
+
+#: ../../key_projects.rst:181
+msgid ""
+"Primarily, the wheel project offers the ``bdist_wheel`` :ref:`setuptools` "
+"extension for creating :term:`wheel distributions <Wheel>`.  Additionally, "
+"it offers its own command line utility for creating and installing wheels."
+msgstr ""
+
+#: ../../key_projects.rst:187
+msgid "Non-PyPA Projects"
+msgstr ""
+
+#: ../../key_projects.rst:192
+msgid "bento"
+msgstr ""
+
+#: ../../key_projects.rst:194
+msgid ""
+"`Docs <http://cournape.github.io/Bento/>`__ | `Mailing list <http://"
+"librelist.com/browser/bento>`__ | `Issues <https://github.com/cournape/Bento/"
+"issues>`__ | `Github <https://github.com/cournape/Bento>`__ | `PyPI <https://"
+"pypi.python.org/pypi/bento>`__"
+msgstr ""
+
+#: ../../key_projects.rst:200
+msgid ""
+"Bento is a packaging tool solution for python software, targeted as an "
+"alternative to distutils, setuptools, distribute, etc....  Bento's "
+"philosophy is reproducibility, extensibility and simplicity (in that order)."
+msgstr ""
+
+#: ../../key_projects.rst:207
+msgid "buildout"
+msgstr ""
+
+#: ../../key_projects.rst:209
+msgid ""
+"`Docs <http://www.buildout.org/en/latest/>`__ | `Mailing list <http://mail."
+"python.org/mailman/listinfo/distutils-sig>`__ [2]_ | `Issues <https://bugs."
+"launchpad.net/zc.buildout>`__ | `PyPI <https://pypi.python.org/pypi/zc."
+"buildout>`__ | irc:#buildout"
+msgstr ""
+
+#: ../../key_projects.rst:215
+msgid ""
+"Buildout is a Python-based build system for creating, assembling and "
+"deploying applications from multiple parts, some of which may be non-Python-"
+"based.  It lets you create a buildout configuration and reproduce the same "
+"software later."
+msgstr ""
+
+#: ../../key_projects.rst:222
+msgid "conda"
+msgstr ""
+
+#: ../../key_projects.rst:224
+msgid "`Docs <http://conda.pydata.org/docs/>`__"
+msgstr ""
+
+#: ../../key_projects.rst:226
+msgid ""
+"conda is the package management tool for `Anaconda <http://docs.continuum.io/"
+"anaconda/index.html>`__ Python installations. Anaconda Python is a "
+"distribution from `Continuum Analytics <http://continuum.io/downloads>`__ "
+"specifically aimed at the scientific community, and in particular on Windows "
+"where the installation of binary extensions is often difficult."
+msgstr ""
+
+#: ../../key_projects.rst:233
+msgid ""
+"Conda is a completely separate tool to pip, virtualenv and wheel, but "
+"provides many of their combined features in terms of package management, "
+"virtual environment management and deployment of binary extensions."
+msgstr ""
+
+#: ../../key_projects.rst:237
+msgid ""
+"Conda does not install packages from PyPI and can install only from the "
+"official Continuum repositories, or anaconda.org (a place for user-"
+"contributed *conda* packages), or a local (e.g. intranet) package server. "
+"However, note that pip can be installed into, and work side-by-side with "
+"conda for managing distributions from PyPI."
+msgstr ""
+
+#: ../../key_projects.rst:245
+msgid "devpi"
+msgstr ""
+
+#: ../../key_projects.rst:247
+msgid ""
+"`Docs <http://doc.devpi.net/latest/>`__ | `Mailing List <https://groups."
+"google.com/forum/#!forum/devpi-dev>`__ | `Issues <https://bitbucket.org/"
+"hpk42/devpi/issues>`__ | `PyPI <https://pypi.python.org/pypi/devpi>`__"
+msgstr ""
+
+#: ../../key_projects.rst:252
+msgid ""
+"devpi features a powerful PyPI-compatible server and PyPI proxy cache with a "
+"complimentary command line tool to drive packaging, testing and release "
+"activities with Python."
+msgstr ""
+
+#: ../../key_projects.rst:260
+msgid "Hashdist"
+msgstr ""
+
+#: ../../key_projects.rst:262
+msgid ""
+"`Docs <http://hashdist.readthedocs.org/en/latest/>`__ | `Github <https://"
+"github.com/hashdist/hashdist/>`__"
+msgstr ""
+
+#: ../../key_projects.rst:265
+msgid ""
+"Hashdist is a library for building non-root software distributions. Hashdist "
+"is trying to be “the Debian of choice for cases where Debian technology "
+"doesn’t work”. The best way for Pythonistas to think about Hashdist may be a "
+"more powerful hybrid of virtualenv and buildout."
+msgstr ""
+
+#: ../../key_projects.rst:273
+msgid "pex"
+msgstr ""
+
+#: ../../key_projects.rst:275
+msgid ""
+"`Docs <http://pex.readthedocs.org/en/latest/>`__ | `Github <https://github."
+"com/pantsbuild/pex/>`__ | `PyPI <https://pypi.python.org/pypi/pex>`__"
+msgstr ""
+
+#: ../../key_projects.rst:279
+msgid ""
+"pex is both a library and tool for generating ``.pex`` (Python EXecutable) "
+"files, standalone Python environments in the spirit of :ref:`virtualenv`. ``."
+"pex`` files are just carefully constructed zip files with a ``#!/usr/bin/env "
+"python`` and special ``__main__.py``, and are designed to make deployment of "
+"Python applications as simple as ``cp``."
+msgstr ""
+
+#: ../../key_projects.rst:288
+msgid "Spack"
+msgstr ""
+
+#: ../../key_projects.rst:290
+msgid ""
+"`Docs <http://software.llnl.gov/spack/>`__ | `Github <https://github.com/"
+"llnl/spack/>`__ | `Paper <http://www.computer.org/csdl/proceedings/sc/2015/"
+"3723/00/2807623.pdf>`__ | `Slides <https://tgamblin.github.io/files/Gamblin-"
+"Spack-SC15-Talk.pdf>`__"
+msgstr ""
+
+#: ../../key_projects.rst:295
+msgid ""
+"A flexible package manager designed to support multiple versions, "
+"configurations, platforms, and compilers.  Spack is like homebrew, but "
+"packages are written in Python and parameterized to allow easy swapping of "
+"compilers, library versions, build options, etc. Arbitrarily many versions "
+"of packages can coexist on the same system. Spack was designed for rapidly "
+"building high performance scientific applications on clusters and "
+"supercomputers."
+msgstr ""
+
+#: ../../key_projects.rst:303
+msgid ""
+"Spack is not in PyPI (yet), but it requires no installation and can be used "
+"immediately after cloning from github."
+msgstr ""
+
+#: ../../key_projects.rst:308
+msgid "Standard Library Projects"
+msgstr ""
+
+#: ../../key_projects.rst:313
+msgid "ensurepip"
+msgstr ""
+
+#: ../../key_projects.rst:315
+msgid ""
+"`Docs <https://docs.python.org/3/library/ensurepip.html>`__ | `Issues <http:/"
+"/bugs.python.org>`__"
+msgstr ""
+
+#: ../../key_projects.rst:318
+msgid ""
+"A package in the Python Standard Library that provides support for "
+"bootstrapping :ref:`pip` into an existing Python installation or virtual "
+"environment.  In most cases, end users won't use this module, but rather it "
+"will be used during the build of the Python distribution."
+msgstr ""
+
+#: ../../key_projects.rst:327
+msgid "distutils"
+msgstr ""
+
+#: ../../key_projects.rst:329
+msgid ""
+"`Docs <https://docs.python.org/3/library/distutils.html>`__ | `User list "
+"<http://mail.python.org/mailman/listinfo/distutils-sig>`__ [2]_ | `Issues "
+"<http://bugs.python.org>`__ | User irc:#pypa  | Dev irc:#pypa-dev"
+msgstr ""
+
+#: ../../key_projects.rst:335
+msgid ""
+"A package in the Python Standard Library that has support for creating and "
+"installing :term:`distributions <Distribution Package>`. :ref:`Setuptools` "
+"provides enhancements to distutils, and is much more commonly used than just "
+"using distutils by itself."
+msgstr ""
+
+#: ../../key_projects.rst:344
+msgid "venv"
+msgstr ""
+
+#: ../../key_projects.rst:346
+msgid ""
+"`Docs <https://docs.python.org/3/library/venv.html>`__ | `Issues <http://"
+"bugs.python.org>`__"
+msgstr ""
+
+#: ../../key_projects.rst:349
+msgid ""
+"A package in the Python Standard Library (starting with Python 3.3) for "
+"creating :term:`Virtual Environments <Virtual Environment>`.  For more "
+"information, see the section on :ref:`Creating and using Virtual "
+"Environments`."
+msgstr ""
+
+#: ../../key_projects.rst:356
+msgid ""
+"pip was created by the same developer as virtualenv, and early on adopted "
+"the virtualenv mailing list, and it's stuck ever since."
+msgstr ""
+
+#: ../../key_projects.rst:359
+msgid ""
+"Multiple projects reuse the distutils-sig mailing list as their user list."
+msgstr ""
+

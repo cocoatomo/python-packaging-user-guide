@@ -1,0 +1,36 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Packaging User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: ../../additional.rst:3
+msgid "Additional Topics"
+msgstr ""
+
+#: ../../additional.rst:0
+msgid "Last Reviewed"
+msgstr ""
+
+#: ../../additional.rst:5
+msgid "2015-09-08"
+msgstr ""
+
+#: ../../additional.rst:7
+msgid ""
+"This section covers a variety of packaging concepts and topics that don't "
+"fit neatly into the documentation of any particular :ref:`project "
+"<projects>` or in either of our guides on :doc:`installing` or :doc:"
+"`distributing`."
+msgstr ""
+

@@ -1,0 +1,218 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Packaging User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: ../../install_requirements_linux.rst:6
+msgid "Installing pip/setuptools/wheel with Linux Package Managers"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:0
+msgid "Page Status"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:8
+msgid "Incomplete"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:0
+msgid "Last Reviewed"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:9
+msgid "2015-09-17"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:12
+msgid ""
+"This section covers how to install :ref:`pip`, :ref:`setuptools`, and :ref:"
+"`wheel` using Linux package managers."
+msgstr ""
+
+#: ../../install_requirements_linux.rst:15
+msgid ""
+"If you're using a Python that was downloaded from `python.org <https://www."
+"python.org>`_, then this section does not apply.  See the :ref:"
+"`installing_requirements` section instead."
+msgstr ""
+
+#: ../../install_requirements_linux.rst:19
+msgid ""
+"Note that it's common for the versions of :ref:`pip`, :ref:`setuptools`, and "
+":ref:`wheel` supported by a specific Linux Distribution to be outdated by "
+"the time it's released to the public, and updates generally only occur for "
+"security reasons, not for feature updates.  For certain Distributions, there "
+"are additional repositories that can be enabled to provide newer versions.  "
+"The repositories we know about are explained below."
+msgstr ""
+
+#: ../../install_requirements_linux.rst:26
+msgid ""
+"Also note that it's somewhat common for Distributions to apply patches for "
+"the sake of security and normalization to their own standards.  In some "
+"cases, this can lead to bugs or unexpected behaviors that vary from the "
+"original unpatched versions.  When this is known, we will make note of it "
+"below."
+msgstr ""
+
+#: ../../install_requirements_linux.rst:33
+msgid "Fedora"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:35
+msgid "Fedora 21:"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:37
+#: ../../install_requirements_linux.rst:46
+#: ../../install_requirements_linux.rst:125
+#: ../../install_requirements_linux.rst:155
+msgid "Python 2::"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:42
+msgid "Python 3: ``sudo yum install python3 python3-wheel``"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:44
+msgid "Fedora 22:"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:51
+msgid "Python 3: ``sudo dnf install python3 python3-wheel``"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:54
+msgid ""
+"To get newer versions of pip, setuptools, and wheel for Python 2, you can "
+"enable the `PyPA Copr Repo <https://copr.fedoraproject.org/coprs/pypa/pypa/"
+">`_ using the `Copr Repo instructions <https://fedorahosted.org/copr/wiki/"
+"HowToEnableRepo>`__, and then run::"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:64
+msgid "CentOS/RHEL"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:66
+msgid ""
+"CentOS and RHEL don't offer :ref:`pip` or :ref:`wheel` in their core "
+"repositories, although :ref:`setuptools` is installed by default."
+msgstr ""
+
+#: ../../install_requirements_linux.rst:69
+msgid "To install pip and wheel for the system Python, there are two options:"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:71
+msgid ""
+"Enable the `EPEL repository <https://fedoraproject.org/wiki/EPEL>`_ using "
+"`these instructions <https://fedoraproject.org/wiki/"
+"EPEL#How_can_I_use_these_extra_packages.3F>`__. On EPEL 6 and EPEL7, you can "
+"install pip like so::"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:78
+msgid "On EPEL 7 (but not EPEL 6), you can install wheel like so::"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:82
+msgid ""
+"Since EPEL only offers extra, non-conflicting packages, EPEL does not offer "
+"setuptools, since it's in the core repository."
+msgstr ""
+
+#: ../../install_requirements_linux.rst:86
+msgid ""
+"Enable the `PyPA Copr Repo <https://copr.fedoraproject.org/coprs/pypa/pypa/"
+">`_ using `these instructions <https://fedorahosted.org/copr/wiki/"
+"HowToEnableRepo>`__ [1]_. You can install pip and wheel like so::"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:93
+msgid "To additionally upgrade setuptools, run::"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:98
+msgid ""
+"To install pip, wheel, and setuptools, in a parallel, non-system environment "
+"(using yum) then there are two options:"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:102
+msgid ""
+"Use the \"Sofware Collections\" feature to enable a parallel collection that "
+"includes pip, setuptools, and wheel."
+msgstr ""
+
+#: ../../install_requirements_linux.rst:105
+msgid ""
+"For Redhat, see here: http://developers.redhat.com/products/"
+"softwarecollections/overview/"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:107
+msgid "For CentOS, see here: https://www.softwarecollections.org/en/"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:109
+msgid "Be aware that collections may not contain the most recent versions."
+msgstr ""
+
+#: ../../install_requirements_linux.rst:111
+msgid ""
+"Enable the `IUS repository <https://ius.io/GettingStarted/>`_ and install "
+"one of the `parallel-installable <https://ius.io/SafeRepo/#parallel-"
+"installable-package>`_ Pythons, along with pip, setuptools, and wheel, which "
+"are kept fairly up to date."
+msgstr ""
+
+#: ../../install_requirements_linux.rst:117
+msgid "For example, for Python 3.4 on CentOS7/RHEL7::"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:123
+msgid "openSUSE"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:130
+#: ../../install_requirements_linux.rst:159
+msgid "Python 3::"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:136
+msgid "Debian/Ubuntu"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:142
+msgid "Replace \"python\" with \"python3\" for Python 3."
+msgstr ""
+
+#: ../../install_requirements_linux.rst:147
+msgid ""
+"Recent Debian/Ubuntu versions have modified pip to use the `\"User Scheme\" "
+"<https://pip.pypa.io/en/stable/user_guide/#user-installs>`_ by default, "
+"which is a significant behavior change that can be surprising to some users."
+msgstr ""
+
+#: ../../install_requirements_linux.rst:153
+msgid "Arch Linux"
+msgstr ""
+
+#: ../../install_requirements_linux.rst:165
+msgid ""
+"Currently, there is no \"copr\" yum plugin available for CentOS/RHEL, so the "
+"only option is to manually place the repo files as described."
+msgstr ""
+
