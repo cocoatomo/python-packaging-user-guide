@@ -1,4 +1,4 @@
-# 
+# cocoatomo <cocoatomo77@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide\n"
@@ -7,8 +7,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2017-04-10 07:40-0400\n"
+"Last-Translator: cocoatomo <cocoatomo77@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
 "X-Generator: Zanata 3.9.6\n"
@@ -16,33 +16,33 @@ msgstr ""
 
 #: ../../current.rst:5
 msgid "Tool Recommendations"
-msgstr ""
+msgstr "推奨ツール"
 
 #: ../../current.rst:0
 msgid "Page Status"
-msgstr ""
+msgstr "ページの状態"
 
 #: ../../current.rst:7
 msgid "Complete"
-msgstr ""
+msgstr "完成"
 
 #: ../../current.rst:0
 msgid "Last Reviewed"
-msgstr ""
+msgstr "最終レビュー日付"
 
 #: ../../current.rst:8
 msgid "2016-06-24"
-msgstr ""
+msgstr "2016-06-24"
 
 #: ../../current.rst:10
 msgid ""
 "If you're familiar with Python packaging and installation, and just want to "
 "know what tools are currently recommended, then here it is."
-msgstr ""
+msgstr "Pythonでのパッケージングやインストールをよく知っていて、現在どのツールが推奨されるのかだけを知りたいなら、ここがその場所です。"
 
 #: ../../current.rst:15
 msgid "Installation Tool Recommendations"
-msgstr ""
+msgstr "推奨のインストールツール"
 
 #: ../../current.rst:17
 msgid ""
@@ -51,12 +51,18 @@ msgid ""
 "ref:`pip` is installed, you may need to also install :ref:`wheel` to get the "
 "benefit of wheel caching. [3]_"
 msgstr ""
+":ref:`pip`を使って :term:`PyPI <Python Package Index (PyPI)>`からPythonの :term:"
+"`パッケージ <Distribution Package>` をインストールします。 [1]_ [2]_ :ref:`pip` "
+"のインストールのされ方によっては、wheelによるキャッシュの恩恵を受けるために :ref:`wheel` もインストールする必要があるかもしれません。 "
+"[3]_"
 
 #: ../../current.rst:22
 msgid ""
 "Use :ref:`virtualenv`, or `venv`_ to isolate application specific "
 "dependencies from a shared Python installation. [4]_"
 msgstr ""
+":ref:`virtualenv`あるいは `venv` "
+"を使って、共用にインストールされているPythonからアプリケーションの特定の依存関係を隔離します。"
 
 #: ../../current.rst:25
 msgid ""
@@ -66,23 +72,25 @@ msgstr ""
 
 #: ../../current.rst:28
 msgid ":ref:`buildout`: primarily focused on the web development community"
-msgstr ""
+msgstr ":ref:`buildout`: 主にweb開発コミュニティ向け"
 
 #: ../../current.rst:30
 msgid ""
 ":ref:`spack`, :ref:`hashdist`, or :ref:`conda`: primarily focused on the "
 "scientific community."
-msgstr ""
+msgstr ":ref:`spack`, :ref:`hashdist`, :ref:`conda`: 主に科学コミュニティ向け"
 
 #: ../../current.rst:36
 msgid "Packaging Tool Recommendations"
-msgstr ""
+msgstr "推奨のパッケージングツール"
 
 #: ../../current.rst:38
 msgid ""
 "Use :ref:`setuptools` to define projects and create :term:`Source "
 "Distributions <Source Distribution (or \"sdist\")>`. [5]_ [6]_"
 msgstr ""
+":ref:`setuptools` を使ってプロジェクトを定義し、 :term:`ソース配布物 <Source Distribution (or "
+"\"sdist\")>` を作成します。 [5]_ [6]_"
 
 #: ../../current.rst:41
 msgid ""
@@ -163,4 +171,3 @@ msgid ""
 "be made to the :pep:`wheel compatibility tagging scheme <425>` before linux "
 "wheels will be allowed."
 msgstr ""
-
