@@ -5,4 +5,9 @@
   <project-version>master</project-version>
   <project-type>podir</project-type>
 
+  <src-dir>pot</src-dir>
+  <trans-dir>.</trans-dir>
+  <rules>
+    <rule pattern="**/*.pot">{locale}/LC_MESSAGES/{path}/{filename}.po</rule>
+  </rules>
 </config>
