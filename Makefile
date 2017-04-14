@@ -97,3 +97,5 @@ gettext:
 
 htmlja:
 	$(SPHINXBUILD) -b html -j4 -D language=ja -D gettext_compact=0 -E -d build/doctrees source $(BUILDDIR)/htmlja
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/htmlja."
