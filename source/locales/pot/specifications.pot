@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013–2015, PyPA
+# Copyright (C) 2013–2017, PyPA
 # This file is distributed under the same license as the Python Packaging User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"POT-Creation-Date: 2017-04-15 06:57+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "Last Reviewed"
 msgstr ""
 
 #: ../../specifications.rst:9
-msgid "2016-01-22"
+msgid "2017-02-06"
 msgstr ""
 
 #: ../../specifications.rst:11
@@ -106,54 +106,62 @@ msgid "The environment markers section in this PEP supersedes the environment ma
 msgstr ""
 
 #: ../../specifications.rst:75
-msgid "Source Distribution Format"
+msgid "Declaring Build System Dependencies"
 msgstr ""
 
 #: ../../specifications.rst:77
+msgid "`pyproject.toml` is a build system independent file format defined in :pep:`518` that projects may provide in order to declare any Python level dependencies that must be installed in order to run the project's build system successfully."
+msgstr ""
+
+#: ../../specifications.rst:82
+msgid "Source Distribution Format"
+msgstr ""
+
+#: ../../specifications.rst:84
 msgid "The source distribution format (``sdist``) is not currently formally defined. Instead, its format is implicitly defined by the behaviour of the standard library's ``distutils`` module when executing the ``setup.py sdist`` command."
 msgstr ""
 
-#: ../../specifications.rst:83
+#: ../../specifications.rst:90
 msgid "Binary Distribution Format"
 msgstr ""
 
-#: ../../specifications.rst:85
+#: ../../specifications.rst:92
 msgid "The binary distribution format (``wheel``) is defined in :pep:`427`."
 msgstr ""
 
-#: ../../specifications.rst:88
+#: ../../specifications.rst:95
 msgid "Platform Compatibility Tags"
 msgstr ""
 
-#: ../../specifications.rst:90
+#: ../../specifications.rst:97
 msgid "The platform compatibility tagging model used for ``wheel`` distribution is defined in :pep:`425`."
 msgstr ""
 
-#: ../../specifications.rst:93
+#: ../../specifications.rst:100
 msgid "The scheme defined in that PEP is insufficient for public distribution of Linux wheel files (and \\*nix wheel files in general), so :pep:`513` was created to define the ``manylinux1`` tag."
 msgstr ""
 
-#: ../../specifications.rst:98
+#: ../../specifications.rst:105
 msgid "Recording Installed Distributions"
 msgstr ""
 
-#: ../../specifications.rst:100
+#: ../../specifications.rst:107
 msgid "The format used to record installed packages and their contents is defined in :pep:`376`."
 msgstr ""
 
-#: ../../specifications.rst:103
+#: ../../specifications.rst:110
 msgid "Note that only the ``dist-info`` directory and the ``RECORD`` file format from that PEP are currently implemented in the default packaging toolchain."
 msgstr ""
 
-#: ../../specifications.rst:108
+#: ../../specifications.rst:115
 msgid "Package index interfaces"
 msgstr ""
 
-#: ../../specifications.rst:111
+#: ../../specifications.rst:118
 msgid "Simple repository API"
 msgstr ""
 
-#: ../../specifications.rst:113
+#: ../../specifications.rst:120
 msgid "The current interface for querying available package versions and retrieving packages from an index server is defined in :pep:`503`."
 msgstr ""
 

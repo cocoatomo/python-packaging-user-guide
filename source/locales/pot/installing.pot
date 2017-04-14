@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013–2015, PyPA
+# Copyright (C) 2013–2017, PyPA
 # This file is distributed under the same license as the Python Packaging User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"POT-Creation-Date: 2017-04-15 06:57+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,231 +85,239 @@ msgid "Run ``python get-pip.py``. [2]_  This will install or upgrade pip. Additi
 msgstr ""
 
 #: ../../installing.rst:69
-msgid "Be cautious if you're using a Python install that's managed by your operating system or another package manager. get-pip.py does not coordinate with those tools, and may leave your system in an inconsistent state."
-msgstr ""
-
-#: ../../installing.rst:76
-msgid "Optionally, Create a virtual environment"
+msgid "Be cautious if you're using a Python install that's managed by your operating system or another package manager. get-pip.py does not coordinate with those tools, and may leave your system in an inconsistent state. You can use ``python get-pip.py --prefix=/usr/local/`` to install in ``/usr/local`` which is designed for locally-installed software."
 msgstr ""
 
 #: ../../installing.rst:78
+msgid "Optionally, Create a virtual environment"
+msgstr ""
+
+#: ../../installing.rst:80
 msgid "See :ref:`section below <Creating and using Virtual Environments>` for details, but here's the basic commands:"
 msgstr ""
 
-#: ../../installing.rst:81
-#: ../../installing.rst:135
+#: ../../installing.rst:83
+#: ../../installing.rst:137
 msgid "Using :ref:`virtualenv`:"
 msgstr ""
 
-#: ../../installing.rst:89
+#: ../../installing.rst:91
 msgid "Using `venv`_: [3]_"
 msgstr ""
 
-#: ../../installing.rst:100
+#: ../../installing.rst:102
 msgid "Creating Virtual Environments"
 msgstr ""
 
-#: ../../installing.rst:102
+#: ../../installing.rst:104
 msgid "Python \"Virtual Environments\" allow Python :term:`packages <Distribution Package>` to be installed in an isolated location for a particular application, rather than being installed globally."
 msgstr ""
 
-#: ../../installing.rst:106
+#: ../../installing.rst:108
 msgid "Imagine you have an application that needs version 1 of LibFoo, but another application requires version 2. How can you use both these applications? If you install everything into /usr/lib/python2.7/site-packages (or whatever your platform’s standard location is), it’s easy to end up in a situation where you unintentionally upgrade an application that shouldn’t be upgraded."
 msgstr ""
 
-#: ../../installing.rst:112
+#: ../../installing.rst:114
 msgid "Or more generally, what if you want to install an application and leave it be? If an application works, any change in its libraries or the versions of those libraries can break the application."
 msgstr ""
 
-#: ../../installing.rst:116
+#: ../../installing.rst:118
 msgid "Also, what if you can’t install :term:`packages <Distribution Package>` into the global site-packages directory? For instance, on a shared host."
 msgstr ""
 
-#: ../../installing.rst:119
+#: ../../installing.rst:121
 msgid "In all these cases, virtual environments can help you. They have their own installation directories and they don’t share libraries with other virtual environments."
 msgstr ""
 
-#: ../../installing.rst:123
+#: ../../installing.rst:125
 msgid "Currently, there are two viable tools for creating Python virtual environments:"
 msgstr ""
 
-#: ../../installing.rst:125
+#: ../../installing.rst:127
 msgid "`venv`_ is available by default in Python 3.3 and later, and installs :ref:`pip` and :ref:`setuptools` into created virtual environments in Python 3.4 and later."
 msgstr ""
 
-#: ../../installing.rst:128
+#: ../../installing.rst:130
 msgid ":ref:`virtualenv` needs to be installed separately, but supports Python 2.6+ and Python 3.3+, and :ref:`pip`, :ref:`setuptools` and :ref:`wheel` are always installed into created virtual environments by default (regardless of Python version)."
 msgstr ""
 
-#: ../../installing.rst:133
+#: ../../installing.rst:135
 msgid "The basic usage is like so:"
 msgstr ""
 
-#: ../../installing.rst:143
+#: ../../installing.rst:145
 msgid "Using `venv`_:"
 msgstr ""
 
-#: ../../installing.rst:151
+#: ../../installing.rst:153
 msgid "For more information, see the `virtualenv <http://virtualenv.pypa.io>`_ docs or the `venv`_ docs."
 msgstr ""
 
-#: ../../installing.rst:156
+#: ../../installing.rst:158
 msgid "Use pip for Installing"
 msgstr ""
 
-#: ../../installing.rst:158
+#: ../../installing.rst:160
 msgid ":ref:`pip` is the recommended installer.  Below, we'll cover the most common usage scenarios. For more detail, see the `pip docs <https://pip.pypa.io>`_, which includes a complete `Reference Guide <https://pip.pypa.io/en/latest/reference/index.html>`_."
 msgstr ""
 
-#: ../../installing.rst:163
+#: ../../installing.rst:165
 msgid "There are a few cases where you might want to use `easy_install <https://pip.pypa.io/en/latest/reference/index.html>`_ instead of pip.  For details, see the the :ref:`pip vs easy_install` breakdown in the :doc:`Advanced Topics <additional>` section."
 msgstr ""
 
-#: ../../installing.rst:170
+#: ../../installing.rst:172
 msgid "Installing from PyPI"
 msgstr ""
 
-#: ../../installing.rst:172
+#: ../../installing.rst:174
 msgid "The most common usage of :ref:`pip` is to install from the :term:`Python Package Index <Python Package Index (PyPI)>` using a :term:`requirement specifier <Requirement Specifier>`. Generally speaking, a requirement specifier is composed of a project name followed by an optional :term:`version specifier <Version Specifier>`.  :pep:`440` contains a :pep:`full specification <440#version-specifiers>` of the currently supported specifiers. Below are some examples."
 msgstr ""
 
-#: ../../installing.rst:180
+#: ../../installing.rst:182
 msgid "To install the latest version of \"SomeProject\":"
 msgstr ""
 
-#: ../../installing.rst:187
+#: ../../installing.rst:189
 msgid "To install a specific version:"
 msgstr ""
 
-#: ../../installing.rst:194
+#: ../../installing.rst:196
 msgid "To install greater than or equal to one version and less than another:"
 msgstr ""
 
-#: ../../installing.rst:201
+#: ../../installing.rst:203
 msgid "To install a version that's :pep:`\"compatible\" <440#compatible-release>` with a certain version: [4]_"
 msgstr ""
 
-#: ../../installing.rst:208
+#: ../../installing.rst:210
 msgid "In this case, this means to install any version \"==1.4.*\" version that's also \">=1.4.2\"."
 msgstr ""
 
-#: ../../installing.rst:213
+#: ../../installing.rst:215
 msgid "Source Distributions vs Wheels"
 msgstr ""
 
-#: ../../installing.rst:215
+#: ../../installing.rst:217
 msgid ":ref:`pip` can install from either :term:`Source Distributions (sdist) <Source Distribution (or \"sdist\")>` or :term:`Wheels <Wheel>`, but if both are present on PyPI, pip will prefer a compatible :term:`wheel <Wheel>`."
 msgstr ""
 
-#: ../../installing.rst:219
+#: ../../installing.rst:221
 msgid ":term:`Wheels <Wheel>` are a pre-built :term:`distribution <Distribution Package>` format that provides faster installation compared to :term:`Source Distributions (sdist) <Source Distribution (or \"sdist\")>`, especially when a project contains compiled extensions."
 msgstr ""
 
-#: ../../installing.rst:224
+#: ../../installing.rst:226
 msgid "If :ref:`pip` does not find a wheel to install, it will locally build a wheel and cache it for future installs, instead of rebuilding the source distribution in the future."
 msgstr ""
 
-#: ../../installing.rst:230
+#: ../../installing.rst:232
 msgid "Upgrading packages"
 msgstr ""
 
-#: ../../installing.rst:232
+#: ../../installing.rst:234
 msgid "Upgrade an already installed `SomeProject` to the latest from PyPI."
 msgstr ""
 
-#: ../../installing.rst:241
+#: ../../installing.rst:243
 msgid "Installing to the User Site"
 msgstr ""
 
-#: ../../installing.rst:243
+#: ../../installing.rst:245
 msgid "To install :term:`packages <Distribution Package>` that are isolated to the current user, use the ``--user`` flag:"
 msgstr ""
 
-#: ../../installing.rst:251
-msgid "For more information see the `User Installs <https://pip.readthedocs.org/en/latest/user_guide.html#user-installs>`_ section from the pip docs."
-msgstr ""
-
-#: ../../installing.rst:257
-msgid "Requirements files"
+#: ../../installing.rst:253
+msgid "For more information see the `User Installs <https://pip.readthedocs.io/en/latest/user_guide.html#user-installs>`_ section from the pip docs."
 msgstr ""
 
 #: ../../installing.rst:259
+msgid "Requirements files"
+msgstr ""
+
+#: ../../installing.rst:261
 msgid "Install a list of requirements specified in a :ref:`Requirements File <pip:Requirements Files>`."
 msgstr ""
 
-#: ../../installing.rst:268
+#: ../../installing.rst:270
 msgid "Installing from VCS"
 msgstr ""
 
-#: ../../installing.rst:270
+#: ../../installing.rst:272
 msgid "Install a project from VCS in \"editable\" mode.  For a full breakdown of the syntax, see pip's section on :ref:`VCS Support <pip:VCS Support>`."
 msgstr ""
 
-#: ../../installing.rst:282
+#: ../../installing.rst:284
 msgid "Installing from other Indexes"
 msgstr ""
 
-#: ../../installing.rst:284
+#: ../../installing.rst:286
 msgid "Install from an alternate index"
 msgstr ""
 
-#: ../../installing.rst:291
+#: ../../installing.rst:293
 msgid "Search an additional index during install, in addition to :term:`PyPI <Python Package Index (PyPI)>`"
 msgstr ""
 
-#: ../../installing.rst:301
+#: ../../installing.rst:303
 msgid "Installing from a local src tree"
 msgstr ""
 
-#: ../../installing.rst:304
+#: ../../installing.rst:306
 msgid "Installing from local src in `Development Mode <https://setuptools.readthedocs.io/en/latest/setuptools.html#development-mode>`_, i.e. in such a way that the project appears to be installed, but yet is still editable from the src tree."
 msgstr ""
 
-#: ../../installing.rst:314
+#: ../../installing.rst:316
 msgid "You can also install normally from src"
 msgstr ""
 
-#: ../../installing.rst:322
+#: ../../installing.rst:324
 msgid "Installing from local archives"
 msgstr ""
 
-#: ../../installing.rst:324
+#: ../../installing.rst:326
 msgid "Install a particular source archive file."
 msgstr ""
 
-#: ../../installing.rst:331
+#: ../../installing.rst:333
 msgid "Install from a local directory containing archives (and don't check :term:`PyPI <Python Package Index (PyPI)>`)"
 msgstr ""
 
-#: ../../installing.rst:343
+#: ../../installing.rst:344
+msgid "Installing from other sources"
+msgstr ""
+
+#: ../../installing.rst:346
+msgid "To install from other data sources (for example Amazon S3 storage) you can create a helper application that presents the data in a :pep:`503` compliant index format, and use the ``--extra-index-url`` flag to direct pip to use that index."
+msgstr ""
+
+#: ../../installing.rst:358
 msgid "Installing Prereleases"
 msgstr ""
 
-#: ../../installing.rst:345
+#: ../../installing.rst:360
 msgid "Find pre-release and development versions, in addition to stable versions.  By default, pip only finds stable versions."
 msgstr ""
 
-#: ../../installing.rst:354
+#: ../../installing.rst:369
 msgid "Installing Setuptools \"Extras\""
 msgstr ""
 
-#: ../../installing.rst:356
+#: ../../installing.rst:371
 msgid "Install `setuptools extras`_."
 msgstr ""
 
-#: ../../installing.rst:368
+#: ../../installing.rst:383
 msgid "\"Secure\" in this context means using a modern browser or a tool like `curl` that verifies SSL certificates when downloading from https URLs."
 msgstr ""
 
-#: ../../installing.rst:372
+#: ../../installing.rst:387
 msgid "Depending on your platform, this may require root or Administrator access. :ref:`pip` is currently considering changing this by `making user installs the default behavior <https://github.com/pypa/pip/issues/1668>`_."
 msgstr ""
 
-#: ../../installing.rst:377
+#: ../../installing.rst:392
 msgid "Beginning with Python 3.4, ``venv`` (a stdlib alternative to :ref:`virtualenv`) will create virtualenv environments with ``pip`` pre-installed, thereby making it an equal alternative to :ref:`virtualenv`."
 msgstr ""
 
-#: ../../installing.rst:382
+#: ../../installing.rst:397
 msgid "The compatible release specifier was accepted in :pep:`440` and support was released in :ref:`setuptools` v8.0 and :ref:`pip` v6.0"
 msgstr ""
 

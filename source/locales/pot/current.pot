@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013–2015, PyPA
+# Copyright (C) 2013–2017, PyPA
 # This file is distributed under the same license as the Python Packaging User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"POT-Creation-Date: 2017-04-15 06:57+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "Installation Tool Recommendations"
 msgstr ""
 
 #: ../../current.rst:17
-msgid "Use :ref:`pip` to install Python :term:`packages <Distribution Package>` from :term:`PyPI <Python Package Index (PyPI)>`. [1]_ [2]_ Depending how :ref:`pip` is installed, you may need to also install :ref:`wheel` to get the benefit of wheel caching. [3]_"
+msgid "Use :ref:`pip` to install Python :term:`packages <Distribution Package>` from :term:`PyPI <Python Package Index (PyPI)>`. [1]_ [2]_ Depending on how :ref:`pip` is installed, you may need to also install :ref:`wheel` to get the benefit of wheel caching. [3]_"
 msgstr ""
 
 #: ../../current.rst:22

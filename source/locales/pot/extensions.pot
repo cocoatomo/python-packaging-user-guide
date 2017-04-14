@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013–2015, PyPA
+# Copyright (C) 2013–2017, PyPA
 # This file is distributed under the same license as the Python Packaging User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"POT-Creation-Date: 2017-04-15 06:57+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgid "low level system access: these modules are created to access lower level 
 msgstr ""
 
 #: ../../extensions.rst:48
-msgid "One particularly notable feature of C extensions is that, when they don't need to call back into the interpreter runtime, they can release CPython's global interpreter lock around long-running operations (regardling of whether those operations are CPU or IO bound)."
+msgid "One particularly notable feature of C extensions is that, when they don't need to call back into the interpreter runtime, they can release CPython's global interpreter lock around long-running operations (regardless of whether those operations are CPU or IO bound)."
 msgstr ""
 
 #: ../../extensions.rst:53
@@ -149,7 +149,7 @@ msgid "In addition to being useful for the creation of accelerator modules, `Cyt
 msgstr ""
 
 #: ../../extensions.rst:159
-msgid "`cffi <http://cffi.readthedocs.org/>`__ is a project created by some of the PyPy developers to make it straightforward for developers that already know both Python and C to expose their C modules to Python applications. It also makes it relatively straightforward to wrap a C module based on its header files, even if you don't know C yourself."
+msgid "`cffi <https://cffi.readthedocs.io/>`__ is a project created by some of the PyPy developers to make it straightforward for developers that already know both Python and C to expose their C modules to Python applications. It also makes it relatively straightforward to wrap a C module based on its header files, even if you don't know C yourself."
 msgstr ""
 
 #: ../../extensions.rst:165

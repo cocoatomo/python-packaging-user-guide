@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013–2015, PyPA
+# Copyright (C) 2013–2017, PyPA
 # This file is distributed under the same license as the Python Packaging User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"POT-Creation-Date: 2017-04-15 06:57+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgid "`Fast & local installs <https://pip.pypa.io/en/latest/user_guide.html#fas
 msgstr ""
 
 #: ../../mirrors.rst:36
-msgid "A variation on the above which pre-builds the installation files for the requirements using `pip wheel <http://pip.readthedocs.org/en/latest/reference/pip_wheel.html>`_::"
+msgid "A variation on the above which pre-builds the installation files for the requirements using `pip wheel <https://pip.readthedocs.io/en/latest/reference/pip_wheel.html>`_::"
 msgstr ""
 
 #: ../../mirrors.rst:45

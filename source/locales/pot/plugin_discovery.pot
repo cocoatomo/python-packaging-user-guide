@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013–2017, PyPA
+# This file is distributed under the same license as the Python Packaging User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Packaging User Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-15 06:57+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../plugin_discovery.rst:3
+msgid "Plugin creation and discovery"
+msgstr ""
+
+#: ../../plugin_discovery.rst:0
+msgid "Page Status"
+msgstr ""
+
+#: ../../plugin_discovery.rst:5
+msgid "Complete"
+msgstr ""
+
+#: ../../plugin_discovery.rst:0
+msgid "Last Reviewed"
+msgstr ""
+
+#: ../../plugin_discovery.rst:6
+msgid "2017-04-10"
+msgstr ""
+
+#: ../../plugin_discovery.rst:8
+msgid "Often when creating a Python application or library you'll want the ability to provide customizations or extra features via **plugins**. Because Python packages can be separately distributed, your application or library may want to automatically **discover** all of the plugins available."
+msgstr ""
+
+#: ../../plugin_discovery.rst:13
+msgid "There are three major approaches to doing automatic plugin discovery:"
+msgstr ""
+
+#: ../../plugin_discovery.rst:15
+msgid "`Using naming convention`_."
+msgstr ""
+
+#: ../../plugin_discovery.rst:16
+msgid "`Using namespace packages`_."
+msgstr ""
+
+#: ../../plugin_discovery.rst:17
+msgid "`Using package metadata`_."
+msgstr ""
+
+#: ../../plugin_discovery.rst:21
+msgid "Using naming convention"
+msgstr ""
+
+#: ../../plugin_discovery.rst:23
+msgid "If all of the plugins for your application follow the same naming convention, you can use :func:`pkgutil.iter_modules` to discover all of the top-level modules that match the naming convention. For example, `Flask`_ uses the naming convention ``flask_{plugin_name}``. If you wanted to automatically discover all of the Flask plugins installed:"
+msgstr ""
+
+#: ../../plugin_discovery.rst:41
+msgid "If you had both the `Flask-SQLAlchemy`_ and `Flask-Talisman`_ plugins installed then ``flask_plugins`` would be:"
+msgstr ""
+
+#: ../../plugin_discovery.rst:51
+msgid "Using naming convention for plugins also allows you to query the Python Package Index's `simple API`_ for all packages that conform to your naming convention."
+msgstr ""
+
+#: ../../plugin_discovery.rst:62
+msgid "Using namespace packages"
+msgstr ""
+
+#: ../../plugin_discovery.rst:64
+msgid ":doc:`Namespace packages <namespace_packages>` can be used to provide a convention for where to place plugins and also provides a way to perform discovery. For example, if you make the sub-package ``myapp.plugins`` a namespace package then other :term:`distributions <Distribution Package>` can provide modules and packages to that namespace. Once installed, you can use :func:`pkgutil.iter_modules` to discover all modules and packages installed under that namespace:"
+msgstr ""
+
+#: ../../plugin_discovery.rst:92
+msgid "Specifying ``myapp.plugins.__path__`` to :func:`~pkgutil.iter_modules` causes it to only look for the modules directly under that namespace. For example, if you have installed distributions that provide the modules ``myapp.plugin.a`` and ``myapp.plugin.b`` then ``myapp_plugins`` in this case would be:"
+msgstr ""
+
+#: ../../plugin_discovery.rst:104
+msgid "This sample uses a sub-package as the namespace package (``myapp.plugin``), but it's also possible to use a top-level package for this purpose (such as ``myapp_plugins``). How to pick the namespace to use is a matter of preference, but it's not recommended to make the top-level package (``myapp`` in this case) a namespace package for the purpose of plugins, as one bad plugin could cause the entire namespace to break which would in turn make your project unimportable."
+msgstr ""
+
+#: ../../plugin_discovery.rst:112
+msgid "Namespace packages are a complex feature and there are several different ways to create them. It's highly recommended to read the :doc:`namespace_packages` documentation and clearly document which approach is preferred for plugins to your project."
+msgstr ""
+
+#: ../../plugin_discovery.rst:118
+msgid "Using package metadata"
+msgstr ""
+
+#: ../../plugin_discovery.rst:120
+msgid "`Setuptools`_ provides `special support`_ for plugins. By providing the ``entry_points`` argument to :func:`setup` in ``setup.py`` plugins can register themselves for discovery."
+msgstr ""
+
+#: ../../plugin_discovery.rst:124
+msgid "For example if you have a package named ``myapp-plugin-a`` and it includes in its ``setup.py``:"
+msgstr ""
+
+#: ../../plugin_discovery.rst:135
+msgid "Then you can discover and load all of the registered entry points by using :func:`pkg_resources.iter_entry_points`:"
+msgstr ""
+
+#: ../../plugin_discovery.rst:148
+msgid "In this example, ``plugins`` would be :"
+msgstr ""
+
+#: ../../plugin_discovery.rst:156
+msgid "The ``entry_point`` specification in ``setup.py`` is fairly flexible and has a lot of options. It's recommended to read over the entire section on `entry points`_."
+msgstr ""
+

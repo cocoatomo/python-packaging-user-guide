@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013–2015, PyPA
+# Copyright (C) 2013–2017, PyPA
 # This file is distributed under the same license as the Python Packaging User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"POT-Creation-Date: 2017-04-15 06:57+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,7 +161,7 @@ msgid "wheel"
 msgstr ""
 
 #: ../../key_projects.rst:172
-msgid "`Docs <http://wheel.readthedocs.io/en/latest/>`__ | `Mailing list <http://mail.python.org/mailman/listinfo/distutils-sig>`__ [2]_ | `Issues <https://bitbucket.org/pypa/wheel/issues?status=new&status=open>`__ | `Bitbucket <https://bitbucket.org/pypa/wheel>`__ | `PyPI <https://pypi.python.org/pypi/wheel>`__ | User irc:#pypa  | Dev irc:#pypa-dev"
+msgid "`Docs <https://wheel.readthedocs.io/en/latest/>`__ | `Mailing list <http://mail.python.org/mailman/listinfo/distutils-sig>`__ [2]_ | `Issues <https://bitbucket.org/pypa/wheel/issues?status=new&status=open>`__ | `Bitbucket <https://bitbucket.org/pypa/wheel>`__ | `PyPI <https://pypi.python.org/pypi/wheel>`__ | User irc:#pypa  | Dev irc:#pypa-dev"
 msgstr ""
 
 #: ../../key_projects.rst:181
@@ -233,7 +233,7 @@ msgid "Hashdist"
 msgstr ""
 
 #: ../../key_projects.rst:262
-msgid "`Docs <http://hashdist.readthedocs.org/en/latest/>`__ | `Github <https://github.com/hashdist/hashdist/>`__"
+msgid "`Docs <https://hashdist.readthedocs.io/en/latest/>`__ | `Github <https://github.com/hashdist/hashdist/>`__"
 msgstr ""
 
 #: ../../key_projects.rst:265
@@ -245,7 +245,7 @@ msgid "pex"
 msgstr ""
 
 #: ../../key_projects.rst:275
-msgid "`Docs <http://pex.readthedocs.org/en/latest/>`__ | `Github <https://github.com/pantsbuild/pex/>`__ | `PyPI <https://pypi.python.org/pypi/pex>`__"
+msgid "`Docs <https://pex.readthedocs.io/en/latest/>`__ | `Github <https://github.com/pantsbuild/pex/>`__ | `PyPI <https://pypi.python.org/pypi/pex>`__"
 msgstr ""
 
 #: ../../key_projects.rst:279

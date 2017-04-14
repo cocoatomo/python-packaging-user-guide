@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2013–2015, PyPA
+# Copyright (C) 2013–2017, PyPA
 # This file is distributed under the same license as the Python Packaging User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"POT-Creation-Date: 2017-04-15 06:57+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -217,7 +217,7 @@ msgid "classifiers"
 msgstr ""
 
 #: ../../distributing.rst:252
-msgid "Provide a list of classifiers the categorize your project. For a full listing, see https://pypi.python.org/pypi?%3Aaction=list_classifiers."
+msgid "Provide a list of classifiers that categorize your project. For a full listing, see https://pypi.python.org/pypi?%3Aaction=list_classifiers."
 msgstr ""
 
 #: ../../distributing.rst:257
@@ -473,231 +473,239 @@ msgid "It's fairly common to also want to install some of your dependencies in e
 msgstr ""
 
 #: ../../distributing.rst:555
-msgid "The first line says to install your project and any dependencies. The second line overrides the \"bar\" dependency, such that it's fulfilled from vcs, not PyPI.  For more on requirements files, see the :ref:`Requirements File <pip:Requirements Files>` section in the pip docs.  For more on vcs installs, see the :ref:`VCS Support <pip:VCS Support>` section of the pip docs."
+msgid "The first line says to install your project and any dependencies. The second line overrides the \"bar\" dependency, such that it's fulfilled from vcs, not PyPI."
 msgstr ""
 
-#: ../../distributing.rst:561
+#: ../../distributing.rst:559
+msgid "If, however, you want \"bar\" installed from a local directory in editable mode, the requirements file should look like this, with the local paths at the top of the file::"
+msgstr ""
+
+#: ../../distributing.rst:564
+msgid "Otherwise, the dependency will be fulfilled from PyPI, due to the installation order of the requirements file.  For more on requirements files, see the :ref:`Requirements File <pip:Requirements Files>` section in the pip docs.  For more on vcs installs, see the :ref:`VCS Support <pip:VCS Support>` section of the pip docs."
+msgstr ""
+
+#: ../../distributing.rst:568
 msgid "Lastly, if you don't want to install any dependencies at all, you can run::"
 msgstr ""
 
-#: ../../distributing.rst:566
+#: ../../distributing.rst:573
 msgid "For more information, see the `Development Mode <https://setuptools.readthedocs.io/en/latest/setuptools.html#development-mode>`_ section of the `setuptools docs <https://setuptools.readthedocs.io>`_."
 msgstr ""
 
-#: ../../distributing.rst:573
+#: ../../distributing.rst:580
 msgid "Packaging your Project"
 msgstr ""
 
-#: ../../distributing.rst:575
+#: ../../distributing.rst:582
 msgid "To have your project installable from a :term:`Package Index` like :term:`PyPI <Python Package Index (PyPI)>`, you'll need to create a :term:`Distribution <Distribution Package>` (aka \":term:`Package <Distribution Package>`\" ) for your project."
 msgstr ""
 
-#: ../../distributing.rst:583
+#: ../../distributing.rst:590
 msgid "Source Distributions"
 msgstr ""
 
-#: ../../distributing.rst:585
+#: ../../distributing.rst:592
 msgid "Minimally, you should create a :term:`Source Distribution <Source Distribution (or \"sdist\")>`:"
 msgstr ""
 
-#: ../../distributing.rst:593
+#: ../../distributing.rst:600
 msgid "A \"source distribution\" is unbuilt (i.e, it's not a :term:`Built Distribution`), and requires a build step when installed by pip.  Even if the distribution is pure python (i.e. contains no extensions), it still involves a build step to build out the installation metadata from ``setup.py``."
 msgstr ""
 
-#: ../../distributing.rst:600
+#: ../../distributing.rst:607
 msgid "Wheels"
 msgstr ""
 
-#: ../../distributing.rst:602
+#: ../../distributing.rst:609
 msgid "You should also create a wheel for your project. A wheel is a :term:`built package <Built Distribution>` that can be installed without needing to go through the \"build\" process. Installing wheels is substantially faster for the end user than installing from a source distribution."
 msgstr ""
 
-#: ../../distributing.rst:607
+#: ../../distributing.rst:614
 msgid "If your project is pure python (i.e. contains no compiled extensions) and natively supports both Python 2 and 3, then you'll be creating what's called a :ref:`\"Universal Wheel\" (see section below) <Universal Wheels>`."
 msgstr ""
 
-#: ../../distributing.rst:611
+#: ../../distributing.rst:618
 msgid "If your project is pure python but does not natively support both Python 2 and 3, then you'll be creating a :ref:`\"Pure Python Wheel\" (see section below) <Pure Python Wheels>`."
 msgstr ""
 
-#: ../../distributing.rst:615
+#: ../../distributing.rst:622
 msgid "If you project contains compiled extensions, then you'll be creating what's called a :ref:`\"Platform Wheel\" (see section below) <Platform Wheels>`."
 msgstr ""
 
-#: ../../distributing.rst:622
+#: ../../distributing.rst:629
 msgid "Universal Wheels"
 msgstr ""
 
-#: ../../distributing.rst:624
+#: ../../distributing.rst:631
 msgid "\"Universal Wheels\" are wheels that are pure python (i.e. contains no compiled extensions) and support Python 2 and 3. This is a wheel that can be installed anywhere by :ref:`pip`."
 msgstr ""
 
-#: ../../distributing.rst:628
+#: ../../distributing.rst:635
 msgid "To build a Universal Wheel:"
 msgstr ""
 
-#: ../../distributing.rst:635
+#: ../../distributing.rst:642
 msgid "You can also permanently set the ``--universal`` flag in \"setup.cfg\" (e.g., see `sampleproject/setup.cfg <https://github.com/pypa/sampleproject/blob/master/setup.cfg>`_)"
 msgstr ""
 
-#: ../../distributing.rst:645
+#: ../../distributing.rst:652
 msgid "Only use the ``--universal`` setting, if:"
 msgstr ""
 
-#: ../../distributing.rst:647
+#: ../../distributing.rst:654
 msgid "Your project runs on Python 2 and 3 with no changes (i.e. it does not require 2to3)."
 msgstr ""
 
-#: ../../distributing.rst:649
+#: ../../distributing.rst:656
 msgid "Your project does not have any C extensions."
 msgstr ""
 
-#: ../../distributing.rst:651
+#: ../../distributing.rst:658
 msgid "Beware that ``bdist_wheel`` does not currently have any checks to warn if you use the setting inappropriately."
 msgstr ""
 
-#: ../../distributing.rst:654
+#: ../../distributing.rst:661
 msgid "If your project has optional C extensions, it is recommended not to publish a universal wheel, because pip will prefer the wheel over a source installation, and prevent the possibility of building the extension."
 msgstr ""
 
-#: ../../distributing.rst:662
+#: ../../distributing.rst:669
 msgid "Pure Python Wheels"
 msgstr ""
 
-#: ../../distributing.rst:664
+#: ../../distributing.rst:671
 msgid "\"Pure Python Wheels\" that are not \"universal\" are wheels that are pure python (i.e. contains no compiled extensions), but don't natively support both Python 2 and 3."
 msgstr ""
 
-#: ../../distributing.rst:668
-#: ../../distributing.rst:695
+#: ../../distributing.rst:675
+#: ../../distributing.rst:702
 msgid "To build the wheel:"
 msgstr ""
 
-#: ../../distributing.rst:675
+#: ../../distributing.rst:682
 msgid "`bdist_wheel` will detect that the code is pure Python, and build a wheel that's named such that it's usable on any Python installation with the same major version (Python 2 or Python 3) as the version you used to build the wheel.  For details on the naming of wheel files, see :pep:`425`"
 msgstr ""
 
-#: ../../distributing.rst:680
+#: ../../distributing.rst:687
 msgid "If your code supports both Python 2 and 3, but with different code (e.g., you use `\"2to3\" <https://docs.python.org/2/library/2to3.html>`_) you can run ``setup.py bdist_wheel`` twice, once with Python 2 and once with Python 3. This will produce wheels for each version."
 msgstr ""
 
-#: ../../distributing.rst:690
+#: ../../distributing.rst:697
 msgid "Platform Wheels"
 msgstr ""
 
-#: ../../distributing.rst:692
+#: ../../distributing.rst:699
 msgid "\"Platform Wheels\" are wheels that are specific to a certain platform like linux, OSX, or Windows, usually due to containing compiled extensions."
 msgstr ""
 
-#: ../../distributing.rst:702
+#: ../../distributing.rst:709
 msgid "`bdist_wheel` will detect that the code is not pure Python, and build a wheel that's named such that it's only usable on the platform that it was built on. For details on the naming of wheel files, see :pep:`425`"
 msgstr ""
 
-#: ../../distributing.rst:708
-msgid ":term:`PyPI <Python Package Index (PyPI)>` currently only allows uploads of platform wheels for Windows and OS X, NOT linux.  Currently, the wheel tag specification (:pep:`425`) does not handle the variation that can exist across linux distros."
+#: ../../distributing.rst:715
+msgid ":term:`PyPI <Python Package Index (PyPI)>` currently supports uploads of platform wheels for Windows, OS X, and the multi-distro ``manylinux1`` ABI. Details of the latter are defined in :pep:`513`."
 msgstr ""
 
-#: ../../distributing.rst:717
+#: ../../distributing.rst:723
 msgid "Uploading your Project to PyPI"
 msgstr ""
 
-#: ../../distributing.rst:721
+#: ../../distributing.rst:727
 msgid "Before releasing on main PyPI repo, you might prefer training with `PyPI test site <https://testpypi.python.org/pypi>`_ which is cleaned on a semi regular basis. See `these instructions <https://wiki.python.org/moin/TestPyPI>`_ on how to setup your configuration in order to use it."
 msgstr ""
 
-#: ../../distributing.rst:727
+#: ../../distributing.rst:733
 msgid "When you ran the command to create your distribution, a new directory dist/ was created under your project's root directory. That's where you'll find your distribution file(s) to upload."
 msgstr ""
 
-#: ../../distributing.rst:730
+#: ../../distributing.rst:736
 msgid "Create an account"
 msgstr ""
 
-#: ../../distributing.rst:732
+#: ../../distributing.rst:738
 msgid "First, you need a :term:`PyPI <Python Package Index (PyPI)>` user account. There are two options:"
 msgstr ""
 
-#: ../../distributing.rst:735
+#: ../../distributing.rst:741
 msgid "Create an account manually `using the form on the PyPI website <https://pypi.python.org/pypi?%3Aaction=register_form>`_."
 msgstr ""
 
-#: ../../distributing.rst:738
+#: ../../distributing.rst:744
 msgid "**(Not recommended):** Have an account created as part of registering your first project (not recommended due to the related security concerns, see option #3 below)."
 msgstr ""
 
-#: ../../distributing.rst:742
+#: ../../distributing.rst:748
 msgid "If you created your account using option #1 (the form), you'll need to manually write a ``~/.pypirc`` file like so."
 msgstr ""
 
-#: ../../distributing.rst:755
+#: ../../distributing.rst:761
 msgid "You can leave out the password line if you use twine with its ``-p PASSWORD`` argument or prefer to simply enter your password when prompted."
 msgstr ""
 
-#: ../../distributing.rst:761
+#: ../../distributing.rst:767
 msgid "Register your project"
 msgstr ""
 
-#: ../../distributing.rst:763
+#: ../../distributing.rst:769
 msgid "Next, if this is the first release, you currently need to explicitly register your project prior to uploading."
 msgstr ""
 
-#: ../../distributing.rst:766
+#: ../../distributing.rst:772
 msgid "There are three ways to do this:"
 msgstr ""
 
-#: ../../distributing.rst:768
+#: ../../distributing.rst:774
 msgid "Use `the form on the PyPI website <https://pypi.python.org/pypi?%3Aaction=submit_form>`_, to upload your ``PKG-INFO`` info located in your local project tree at ``myproject.egg-info/PKG-INFO``.  If you don't have that file or directory, then run ``python setup.py egg_info`` to have it generated."
 msgstr ""
 
-#: ../../distributing.rst:773
+#: ../../distributing.rst:779
 msgid "Run ``twine register dist/mypkg.whl``, and :ref:`twine` will register your project based on the package metadata in the specified files. Your ``~/.pypirc`` must already be appropriately configured for twine to work."
 msgstr ""
 
-#: ../../distributing.rst:776
+#: ../../distributing.rst:782
 msgid "**(Not recommended):** Run ``python setup.py register``.  If you don't have a user account already, a wizard will create one for you. This approach is covered here due to it being mentioned in other guides, but it is not recommended as it may use a plaintext HTTP or unverified HTTPS connection on some Python versions, allowing your username and password to be intercepted during transmission."
 msgstr ""
 
-#: ../../distributing.rst:785
+#: ../../distributing.rst:791
 msgid "Upload your distributions"
 msgstr ""
 
-#: ../../distributing.rst:787
+#: ../../distributing.rst:793
 msgid "Finally, you can upload your distributions to :term:`PyPI <Python Package Index (PyPI)>`."
 msgstr ""
 
-#: ../../distributing.rst:790
+#: ../../distributing.rst:796
 msgid "There are two options:"
 msgstr ""
 
-#: ../../distributing.rst:792
+#: ../../distributing.rst:798
 msgid "Use :ref:`twine`"
 msgstr ""
 
-#: ../../distributing.rst:798
+#: ../../distributing.rst:804
 msgid "The biggest reason to use twine is that ``python setup.py upload`` (option #2 below) uploads files over plaintext. This means anytime you use it you expose your username and password to a MITM attack. Twine uses only verified TLS to upload to PyPI in order to protect your credentials from theft."
 msgstr ""
 
-#: ../../distributing.rst:803
+#: ../../distributing.rst:809
 msgid "Secondly it allows you to precreate your distribution files.  ``python setup.py upload`` only allows you to upload something that you've created in the same command invocation. This means that you cannot test the exact file you're going to upload to PyPI to ensure that it works before uploading it."
 msgstr ""
 
-#: ../../distributing.rst:808
+#: ../../distributing.rst:814
 msgid "Finally it allows you to pre-sign your files and pass the .asc files into the command line invocation (``twine upload twine-1.0.1.tar.gz twine-1.0.1.tar.gz.asc``). This enables you to be assured that you're typing your gpg passphrase into gpg itself and not anything else since *you* will be the one directly executing ``gpg --detach-sign -a <filename>``."
 msgstr ""
 
-#: ../../distributing.rst:815
+#: ../../distributing.rst:821
 msgid "**(Not recommended):** Use :ref:`setuptools`:"
 msgstr ""
 
-#: ../../distributing.rst:821
+#: ../../distributing.rst:827
 msgid "This approach is covered here due to it being mentioned in other guides, but it is not recommended as it may use a plaintext HTTP or unverified HTTPS connection on some Python versions, allowing your username and password to be intercepted during transmission."
 msgstr ""
 
-#: ../../distributing.rst:828
+#: ../../distributing.rst:834
 msgid "Depending on your platform, this may require root or Administrator access. :ref:`pip` is currently considering changing this by `making user installs the default behavior <https://github.com/pypa/pip/issues/1668>`_."
 msgstr ""
 
-#: ../../distributing.rst:834
+#: ../../distributing.rst:840
 msgid "Specifically, the \"console_script\" approach generates ``.exe`` files on Windows, which are necessary because the OS special-cases ``.exe`` files. Script-execution features like ``PATHEXT`` and the :pep:`Python Launcher for Windows <397>` allow scripts to be used in many cases, but not all."
 msgstr ""
 
