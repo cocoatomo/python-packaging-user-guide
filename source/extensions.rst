@@ -47,7 +47,7 @@ conventional categories:
 
   One particularly notable feature of C extensions is that, when they don't
   need to call back into the interpreter runtime, they can release CPython's
-  global interpreter lock around long-running operations (regardling of
+  global interpreter lock around long-running operations (regardless of
   whether those operations are CPU or IO bound).
 
 Not all extension modules will fit neatly into the above categories. The
@@ -156,7 +156,7 @@ wrapper modules up to date.
   modules. It still involves wrapping the interfaces by hand, however, so
   may not be a good choice for wrapping large APIs.
 
-* `cffi <http://cffi.readthedocs.org/>`__ is a project created by some of the PyPy
+* `cffi <https://cffi.readthedocs.io/>`__ is a project created by some of the PyPy
   developers to make it straightforward for developers that already know
   both Python and C to expose their C modules to Python applications. It
   also makes it relatively straightforward to wrap a C module based on its

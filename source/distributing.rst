@@ -249,7 +249,7 @@ classifiers
       'Programming Language :: Python :: 3.4',
   ],
 
-Provide a list of classifiers the categorize your project. For a full listing,
+Provide a list of classifiers that categorize your project. For a full listing,
 see https://pypi.python.org/pypi?%3Aaction=list_classifiers.
 
 
@@ -554,7 +554,14 @@ requirements file like so::
 
 The first line says to install your project and any dependencies. The second
 line overrides the "bar" dependency, such that it's fulfilled from vcs, not
-PyPI.  For more on requirements files, see the :ref:`Requirements File
+PyPI.
+
+If, however, you want "bar" installed from a local directory in editable mode, the requirements file should look like this, with the local paths at the top of the file::
+
+  -e /path/to/project/bar
+  -e .
+
+Otherwise, the dependency will be fulfilled from PyPI, due to the installation order of the requirements file.  For more on requirements files, see the :ref:`Requirements File
 <pip:Requirements Files>` section in the pip docs.  For more on vcs installs,
 see the :ref:`VCS Support <pip:VCS Support>` section of the pip docs.
 
@@ -705,10 +712,9 @@ on. For details on the naming of wheel files, see :pep:`425`
 
 .. note::
 
-  :term:`PyPI <Python Package Index (PyPI)>` currently only allows uploads of
-  platform wheels for Windows and OS X, NOT linux.  Currently, the wheel tag
-  specification (:pep:`425`) does not handle the variation that can
-  exist across linux distros.
+  :term:`PyPI <Python Package Index (PyPI)>` currently supports uploads of
+  platform wheels for Windows, OS X, and the multi-distro ``manylinux1`` ABI.
+  Details of the latter are defined in :pep:`513`.
 
 
 .. _`Uploading your Project to PyPI`:
@@ -785,7 +791,7 @@ Upload your distributions
 -------------------------
 
 Finally, you can upload your distributions to :term:`PyPI <Python Package Index
-(PyPI)>`. 
+(PyPI)>`.
 
 There are two options:
 
@@ -816,7 +822,7 @@ There are two options:
 
    ::
 
-    python setup.py sdist bdist_wheel upload
+    python setup.py bdist_wheel sdist upload
 
    This approach is covered here due to it being mentioned in other guides, but it
    is not recommended as it may use a plaintext HTTP or unverified HTTPS connection

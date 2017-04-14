@@ -69,7 +69,9 @@ Install pip, setuptools, and wheel
       Be cautious if you're using a Python install that's managed by your
       operating system or another package manager. get-pip.py does not
       coordinate with those tools, and may leave your system in an
-      inconsistent state.
+      inconsistent state. You can use ``python get-pip.py --prefix=/usr/local/``
+      to install in ``/usr/local`` which is designed for locally-installed
+      software.
 
 
 Optionally, Create a virtual environment
@@ -249,7 +251,7 @@ current user, use the ``--user`` flag:
 
 
 For more information see the `User Installs
-<https://pip.readthedocs.org/en/latest/user_guide.html#user-installs>`_ section
+<https://pip.readthedocs.io/en/latest/user_guide.html#user-installs>`_ section
 from the pip docs.
 
 
@@ -338,6 +340,19 @@ Install from a local directory containing archives (and don't check :term:`PyPI
  pip install --no-index --find-links=relative/dir/ SomeProject
 
 
+Installing from other sources
+=============================
+
+To install from other data sources (for example Amazon S3 storage) you can
+create a helper application that presents the data in a :pep:`503` compliant
+index format, and use the ``--extra-index-url`` flag to direct pip to use
+that index.
+
+::
+
+ ./s3helper --port=7777
+ pip install --extra-index-url http://localhost:7777 SomeProject
+
 
 Installing Prereleases
 ======================
@@ -384,4 +399,4 @@ Install `setuptools extras`_.
        :ref:`pip` v6.0
 
 .. _venv: https://docs.python.org/3/library/venv.html
-.. _setuptools extras: http://setuptools.readthedocs.io/en/latest/setuptools.html#declaring-extras-optional-features-with-their-own-dependencies
+.. _setuptools extras: https://setuptools.readthedocs.io/en/latest/setuptools.html#declaring-extras-optional-features-with-their-own-dependencies
