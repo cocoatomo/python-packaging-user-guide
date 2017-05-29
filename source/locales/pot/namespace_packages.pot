@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-15 06:57+0900\n"
+"POT-Creation-Date: 2017-05-29 09:15+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "Page Status"
 msgstr ""
 
 #: ../../namespace_packages.rst:5
-msgid "Draft"
+msgid "Complete"
 msgstr ""
 
 #: ../../namespace_packages.rst:0
@@ -33,7 +33,7 @@ msgid "Last Reviewed"
 msgstr ""
 
 #: ../../namespace_packages.rst:6
-msgid "2017-05-04"
+msgid "2017-04-19"
 msgstr ""
 
 #: ../../namespace_packages.rst:8
@@ -152,5 +152,9 @@ msgstr ""
 
 #: ../../namespace_packages.rst:225
 msgid "Finally, every distribution must provide the ``namespace_packages`` argument to :func:`~setuptools.setup` in ``setup.py``. For example:"
+msgstr ""
+
+#: ../../namespace_packages.rst:239
+msgid "A complete working example of two pkg_resources-style namespace packages can be found in the `pkg_resources namespace example project`_."
 msgstr ""
 

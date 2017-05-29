@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-15 06:57+0900\n"
+"POT-Creation-Date: 2017-05-29 09:15+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,34 +85,34 @@ msgid "Specifying ``myapp.plugins.__path__`` to :func:`~pkgutil.iter_modules` ca
 msgstr ""
 
 #: ../../plugin_discovery.rst:104
-msgid "This sample uses a sub-package as the namespace package (``myapp.plugin``), but it's also possible to use a top-level package for this purpose (such as ``myapp_plugins``). How to pick the namespace to use is a matter of preference, but it's not recommended to make the top-level package (``myapp`` in this case) a namespace package for the purpose of plugins, as one bad plugin could cause the entire namespace to break which would in turn make your project unimportable."
-msgstr ""
-
-#: ../../plugin_discovery.rst:112
-msgid "Namespace packages are a complex feature and there are several different ways to create them. It's highly recommended to read the :doc:`namespace_packages` documentation and clearly document which approach is preferred for plugins to your project."
+msgid "This sample uses a sub-package as the namespace package (``myapp.plugin``), but it's also possible to use a top-level package for this purpose (such as ``myapp_plugins``). How to pick the namespace to use is a matter of preference, but it's not recommended to make your project's main top-level package ( ``myapp`` in this case) a namespace package for the purpose of plugins, as one bad plugin could cause the entire namespace to break which would in turn make your project unimportable. For the \"namespace sub-package\" approach to work, the plugin packages must omit the ``__init__.py`` for your top-level package directory (``myapp`` in this case) and include the namespace-package style ``__init__.py`` in the namespace sub-package directory (``myapp/plugins``). This also means that plugins will need to explicitly pass a list of packages to :func:`setup`'s ``packages`` argument instead of using :func:`setuptools.find_packages`."
 msgstr ""
 
 #: ../../plugin_discovery.rst:118
-msgid "Using package metadata"
-msgstr ""
-
-#: ../../plugin_discovery.rst:120
-msgid "`Setuptools`_ provides `special support`_ for plugins. By providing the ``entry_points`` argument to :func:`setup` in ``setup.py`` plugins can register themselves for discovery."
+msgid "Namespace packages are a complex feature and there are several different ways to create them. It's highly recommended to read the :doc:`namespace_packages` documentation and clearly document which approach is preferred for plugins to your project."
 msgstr ""
 
 #: ../../plugin_discovery.rst:124
+msgid "Using package metadata"
+msgstr ""
+
+#: ../../plugin_discovery.rst:126
+msgid "`Setuptools`_ provides `special support`_ for plugins. By providing the ``entry_points`` argument to :func:`setup` in ``setup.py`` plugins can register themselves for discovery."
+msgstr ""
+
+#: ../../plugin_discovery.rst:130
 msgid "For example if you have a package named ``myapp-plugin-a`` and it includes in its ``setup.py``:"
 msgstr ""
 
-#: ../../plugin_discovery.rst:135
+#: ../../plugin_discovery.rst:141
 msgid "Then you can discover and load all of the registered entry points by using :func:`pkg_resources.iter_entry_points`:"
 msgstr ""
 
-#: ../../plugin_discovery.rst:148
+#: ../../plugin_discovery.rst:154
 msgid "In this example, ``plugins`` would be :"
 msgstr ""
 
-#: ../../plugin_discovery.rst:156
+#: ../../plugin_discovery.rst:162
 msgid "The ``entry_point`` specification in ``setup.py`` is fairly flexible and has a lot of options. It's recommended to read over the entire section on `entry points`_."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-15 06:57+0900\n"
+"POT-Creation-Date: 2017-05-29 09:15+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,7 +146,19 @@ msgstr ""
 msgid "Exclude scripts during install"
 msgstr ""
 
-#: ../../pip_easy_install.rst:66
+#: ../../pip_easy_install.rst:63
+msgid "per project index"
+msgstr ""
+
+#: ../../pip_easy_install.rst:63
+msgid "Only in virtualenv"
+msgstr ""
+
+#: ../../pip_easy_install.rst:63
+msgid "Yes, via setup.cfg"
+msgstr ""
+
+#: ../../pip_easy_install.rst:69
 msgid "https://setuptools.readthedocs.io/en/latest/easy_install.html#natural-script-launcher"
 msgstr ""
 
