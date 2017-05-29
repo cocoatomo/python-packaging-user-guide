@@ -205,6 +205,10 @@ above to make the interface available as an importable Python module.
 Implementing binary extensions
 ==============================
 
+The CPython `Extending and Embedding <https://docs.python.org/3/extending/>`_
+guide includes an introduction to writing a
+`custom extension module in C <https://docs.python.org/3/extending/extending.html>`_.
+
 ::
 
    mention the stable ABI (3.2+, link to the CPython C API docs)
@@ -279,6 +283,9 @@ be able to build Python extensions for all Python versions from 3.5 onwards.
 Publishing binary extensions
 ============================
 
+For interim guidance on this topic, see the discussion in
+`this issue <https://github.com/pypa/python-packaging-user-guide/issues/284>`_.
+
 ::
 
    FIXME
@@ -286,5 +293,5 @@ Publishing binary extensions
    cover publishing as wheel files on PyPI or a custom index server
    cover creation of Windows and Mac OS X installers
    mention the fact that Linux distros have a requirement to build from
-   source in their own build systems anyway, so pre-built binaries for
-   *nix systems currently aren't common
+   source in their own build systems, so binary-only releases are strongly
+   discouraged
