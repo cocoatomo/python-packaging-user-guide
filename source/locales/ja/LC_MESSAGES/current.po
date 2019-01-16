@@ -3,15 +3,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-09 10:42+0900\n"
+"POT-Creation-Date: 2017-04-15 06:57+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-04-12 10:09-0400\n"
+"PO-Revision-Date: 2017-04-14 07:41+0000\n"
 "Last-Translator: cocoatomo <cocoatomo77@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
 #: ../../current.rst:5
@@ -24,7 +24,7 @@ msgstr "ページの状態"
 
 #: ../../current.rst:7
 msgid "Complete"
-msgstr "完成"
+msgstr "完了"
 
 #: ../../current.rst:0
 msgid "Last Reviewed"
@@ -47,7 +47,7 @@ msgstr "推奨のインストールツール"
 #: ../../current.rst:17
 msgid ""
 "Use :ref:`pip` to install Python :term:`packages <Distribution Package>` "
-"from :term:`PyPI <Python Package Index (PyPI)>`. [1]_ [2]_ Depending how :"
+"from :term:`PyPI <Python Package Index (PyPI)>`. [1]_ [2]_ Depending on how :"
 "ref:`pip` is installed, you may need to also install :ref:`wheel` to get the "
 "benefit of wheel caching. [3]_"
 msgstr ""
@@ -62,13 +62,13 @@ msgid ""
 "dependencies from a shared Python installation. [4]_"
 msgstr ""
 ":ref:`virtualenv` あるいは `venv` "
-"を使って、共用にインストールされているPythonからアプリケーションの特定の依存関係を隔離します。"
+"を使って、共用にインストールされているPythonからアプリケーションの特定の依存関係を隔離します。 [4]_"
 
 #: ../../current.rst:25
 msgid ""
 "If you're looking for management of fully integrated cross-platform software "
 "stacks, consider:"
-msgstr ""
+msgstr "全体を統合するクロスプラットフォームのソフトウェアスタックの管理ツールを探しているなら、次のものを検討してください:"
 
 #: ../../current.rst:28
 msgid ":ref:`buildout`: primarily focused on the web development community"
@@ -128,6 +128,8 @@ msgid ""
 "`rationale section <453#rationale>` from :pep:`453` as for why pip was "
 "chosen."
 msgstr ""
+":pep:`453` の受諾によりインストールされる3.4以降のほとんどのPythonで、 :ref:`pip` がデフォルトで使用可能となりました。\n"
+"なぜpipが選ばれたのかは :pep:`453` の :pep:`rationale 節 <453#rationale>` を参照してください。"
 
 #: ../../current.rst:61
 msgid ""
@@ -136,6 +138,10 @@ msgid ""
 "common \"python-pip\" package that's found in various linux distros, does "
 "not depend on \"python-wheel\" currently."
 msgstr ""
+":ref:`get-pip.py <pip:get-pip>` および :ref:`virtualenv` は :ref:`wheel` "
+"をインストールしますが、 :ref:`ensurepip` および :ref:`venv <venv>` は現時点ではインストールしません。\n"
+"様々な linux ディストリビューションにある共通の \"python-pip\" パッケージも、現時点では \"python-wheel\" "
+"には依存していません。"
 
 #: ../../current.rst:66
 msgid ""
@@ -144,6 +150,9 @@ msgid ""
 "`virtualenv`. However, using :ref:`virtualenv` will still be recommended for "
 "users that need cross-version consistency."
 msgstr ""
+"Python 3.4から ``venv`` は ``pip`` がインストールされたvirtualenv環境を作るようになり、それによって :ref:"
+"`virtualenv` と同等の選択肢となりました。\n"
+"しかし、バージョンをまたいだ整合性が必要なユーザーには依然として :ref:`virtualenv` が推奨されます。"
 
 #: ../../current.rst:71
 msgid ""
@@ -170,6 +179,8 @@ msgid ""
 "`distribute`_ (a fork of setuptools) was merged back into :ref:`setuptools` "
 "in June 2013, thereby making setuptools the default choice for packaging."
 msgstr ""
+"（setuptoolsのフォークである） `distribute`_ は2013年6月に :ref:`setuptools` "
+"へマージされ、そのためパッケージングではsetuptoolsがデフォルトの選択肢となりました。"
 
 #: ../../current.rst:89
 msgid ""
@@ -179,3 +190,6 @@ msgid ""
 "be made to the :pep:`wheel compatibility tagging scheme <425>` before linux "
 "wheels will be allowed."
 msgstr ""
+":term:`PyPI <Python Package Index (PyPI)>` には現時点ではWindowsとMac OS "
+"Xのwheelのみがアップロードでき、python.orgからダウンロードできるバイナリインストーラーと互換性がある必要があります。\n"
+"linuxのwheelがアップロードできるようになる前に、 :pep:`wheelの互換性タグスキーム <425>` が拡張される必要があります。"
